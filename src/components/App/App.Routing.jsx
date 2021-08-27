@@ -14,6 +14,8 @@ import {NewAccount} from '../../views/NewAccount';
 import {ResetPassword} from '../../views/ResetPassword';
 import {SignIn} from '../../views/Signin';
 import { Alert } from '@material-ui/lab';
+import {EmailSent} from '../../views/EmailSent'
+import {ItemsList} from '../../views/ItemsList'
 
 const Demos = () => {
   return (
@@ -71,7 +73,21 @@ const Auth = () => {
           <Route path = "/auth/reset">
           <ResetPassword/>
           </Route>
+
+          <Route path = "/auth/sent">
+          <EmailSent/>
+          </Route>
     </Switch>
+  )
+}
+
+const Items = () => {
+  return(
+  <Switch>
+    <Route path = "/items/list">
+    <NewAccount/>
+    </Route>
+ </Switch>
   )
 }
 
@@ -85,6 +101,10 @@ export const Routing = () => {
 
           <Route path = "/auth">
           <Auth/>
+          </Route>
+
+          <Route path = "/items">
+          <Items/>
           </Route>
 
           <Route path = "/">

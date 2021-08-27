@@ -1,17 +1,20 @@
 import React from "react";
 import { Layout } from "../../components/Layout";
 
+
 export const LandingPage = () => {
+
   return (
     <Layout
       title="Biz App"
       secondary={[
         `Sign In`,
         `/auth/
-    signin`,
+    signin`
       ]}
       primary={["Create Account", "/auth/register"]}
     />
+      
   );
 };
 

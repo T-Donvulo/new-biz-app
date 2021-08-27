@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { Layout } from "../../components/Layout";
 import { Input } from "../../components/Input";
 import { tokens } from "../../data/tokens";
-import { useSignIn } from "./SignIn/useSignIn";
+import { useSignIn } from "./Signin.useSignin";
 import { ALERTS } from './SignIn.constants';
 
 const InputWrapper = styled.div`
-  padding: ${tokens.spacing.s}0;
+  padding: ${tokens.spacing.s};
 `;
 
 export const SignIn = () => {
@@ -27,7 +27,7 @@ export const SignIn = () => {
       title="Sign In"
       alert={alert ? ALERTS[alert] : undefined}
       secondary={["Cancel", isResting &&  "/"]}
-      primary={["Sign In", isResting && signin]}
+      primary={["Sign In", isResting && SignIn]}
     >
       <InputWrapper>
         <Input

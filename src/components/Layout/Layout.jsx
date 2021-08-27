@@ -98,7 +98,6 @@ export const Layout = (props) => {
       event.preventDefault();
 
       if(typeof primary[1] === 'string'){
-    const history = useHistory();
         return history.to(primary[1]);
       }
       primary[1]();

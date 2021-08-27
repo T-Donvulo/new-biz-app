@@ -26,6 +26,11 @@ export const ALERTS = {
       title: "Checking details",
       nature: "resolving",
     },
+    technical: {
+      nature: 'error',
+      title:' technical error',
+      description: 'Something went wrong on our side. Please try again later'
+    }
   };
   
   //git push
