@@ -1,5 +1,6 @@
 import React  from 'react';
-import {Switch, Route, HashRouter} from 'react-router-dom'
+import {Switch, Route} from "react-router-dom";
+import {useApp} from './App.useApp'
 import {Demo as ButtonDemo} from '../Button/Button.Demo'
 import {Demo as CheckboxDemo} from '../Checkbox/Checkbox.Demo'
 import {Demo as ImageDemo} from '../Image/Image.Demo'
@@ -92,8 +93,13 @@ const Items = () => {
 }
 
 export const Routing = () => {
+  const {checking} = useApp();
+
+  if(checking){
+    return null;
+  }
+
   return (
-  <HashRouter>
       <Switch>
       <Route path = "/demo">
           <Demos/>
@@ -111,7 +117,6 @@ export const Routing = () => {
           <LandingPage/>
           </Route>
       </Switch>
-   </HashRouter>
    
   );
 }
