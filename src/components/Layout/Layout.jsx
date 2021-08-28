@@ -8,10 +8,10 @@ import { Alert } from "../Alert";
 import { useHistory} from 'react-router-dom';
 
 const COLORS = {
-  white: "rgb(${tokens.colors.white})",
-  turquoise: "rgb(${tokens.colors.turquoise})",
+  white: `rgb(${tokens.colors.white})`,
+  turquoise: `rgb(${tokens.colors.turquoise})`,
   whiteStronger: `rgba(${tokens.colors.white}, ${tokens.opacity.stronger})`,
-  blackStrong: "rgba(${tokens.colors.black}, ${tokens.opacity.strong})",
+  blackStrong: `rgba(${tokens.colors.black}, ${tokens.opacity.strong})`,
 };
 
 const Base = styled.div`

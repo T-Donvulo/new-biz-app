@@ -1,6 +1,7 @@
-import { ContactSupportOutlined } from "@material-ui/icons";
+//import { ContactSupportOutlined } from "@material-ui/icons";
 import GoTrue from "gotrue-js";
 import { openDB } from "idb";
+
 
 const auth = new GoTrue({
   APIUrl: "https://new-biz-app.netlify.app/.netlify/identity",
@@ -133,6 +134,7 @@ const createUsersApi = () => {
     }
     
     };
+   
 
     return {
       getCurrent,
@@ -145,4 +147,7 @@ const createUsersApi = () => {
  
 };
 
-//  
+export const users =createUsersApi();
+export default users;
+
+ 

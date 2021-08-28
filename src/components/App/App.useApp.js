@@ -27,10 +27,17 @@ import {users} from '../../api/users'
 const checkIfAuthToken = () => {
     const {hash} = window.location.hash;
 
-    if(!hash || !hash.startsWith('#confirmation_token')) return
-    const  tokenValue = hash.replace(/#confirmation_token/, '')
+    if(!hash || !hash.startsWith('#confirmation_token')) return false;
+    const  tokenValue = hash.replace(/#confirmation_token/, '');
 
-   // users.signInWithToken()
+   //users.signInWithToken()
+}
+
+export const useLandingPage =() => {
+    const history = useHistory();
+    const [loggedIn, setLoggedIn] = useState(null)
+     checkIfAuthToken 
+
 }
 
 export const useApp = () =>{

@@ -5,16 +5,16 @@ import { tokens } from "../../data/tokens";
 import { Link } from "react-router-dom";
 
 const COLORS = {
-  white: "rgb(${tokens.colors.white})",
-  turquoise: "rgb(${tokens.colors.turquoise})",
-  black: "rgb(${tokens.colors.black})",
-  none: "transparent",
+  white: `rgb(${tokens.colors.white})`,
+  turquoise: `rgb(${tokens.colors.turquoise})`,
+  black: `rgb(${tokens.colors.black})`,
+  none: `transparent`,
   turquoiseSubtler:
-    "rgba(${tokens.colors.turquoise}, ${tokens.opacity.subtler})",
+    `rgba(${tokens.colors.turquoise}, ${tokens.opacity.subtler})`,
   turquoiseStronger:
-    "rgba(${tokens.colors.turquoise}, ${tokens.opacity.stronger})",
-  whiteSubtler: "rgba(${tokens.colors.white}, ${tokens.opacity.subtler})",
-  whiteStronger: "rgba(${tokens.colors.white}, ${tokens.opacity.stronger})",
+    `rgba(${tokens.colors.turquoise}, ${tokens.opacity.stronger})`,
+  whiteSubtler: `rgba(${tokens.colors.white}, ${tokens.opacity.subtler})`,
+  whiteStronger: `rgba(${tokens.colors.white}, ${tokens.opacity.stronger})`,
 };
 
 const calcBackground = ({ importance, inverse }) => {
